@@ -1,0 +1,52 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.canvas-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+canvas {
+  border: 3px solid #4CAF50;
+  background-color: #000000;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+  border-radius: 4px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.overlay.hidden {
+  display: none;
+}
